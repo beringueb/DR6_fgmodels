@@ -1,0 +1,10 @@
+#outputs folders that contain chains etc ...
+
+highL_plik/outputs/
+highL_plik_commonSZ/outputs/
+highL_plik_commonSZCIB/outputs/
+highL_plik_commonSZCIB_fixedTc/outputs/
+
+#plik and highL data
+
+data/
