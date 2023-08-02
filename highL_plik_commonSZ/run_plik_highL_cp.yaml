@@ -1,5 +1,6 @@
 debug: False
 force: False
+resume : True
 
 output: ./outputs/chains/plik_highL
 
