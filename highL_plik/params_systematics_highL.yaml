@@ -1,9 +1,9 @@
-# Fixed systematics
+#systematics
 cal_acts_148: 
   prior: 
     dist: norm
-      loc: 1.0
-      scale: 0.02
+    loc: 1.0
+    scale: 0.02
   ref: 1.00
   latex: cal^{148}_{ACT South}  
 cal_acts_220: 
@@ -15,8 +15,8 @@ cal_acts_220:
 cal_acte_148: 
   prior: 
     dist: norm
-      loc: 1.0
-      scale: 0.02
+    loc: 1.0
+    scale: 0.02
   ref: 1.00
   latex: cal^{148}_{ACT Equa}  
 cal_acte_220: 

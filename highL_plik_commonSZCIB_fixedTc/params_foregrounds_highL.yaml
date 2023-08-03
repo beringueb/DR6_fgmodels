@@ -2,16 +2,16 @@
 a_gtt_as:
   prior:
     dist: norm
-      loc: 0.4
-      scale: 0.2
+    loc: 0.4
+      cale: 0.2
   ref: 0.4
   proposal: 0.01
   latex: a^\mathrm{cirrus, ACT-south}
 a_gtt_ae:
   prior:
     dist: norm
-      loc: 0.8
-      scale: 0.2
+    loc: 0.8
+    scale: 0.2
   ref: 0.80
   proposal: 0.01
   latex: a^\mathrm{cirrus, ACT-equa}
