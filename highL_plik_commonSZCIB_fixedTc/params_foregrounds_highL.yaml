@@ -3,7 +3,7 @@ a_gtt_as:
   prior:
     dist: norm
     loc: 0.4
-      cale: 0.2
+    scale: 0.2
   ref: 0.4
   proposal: 0.01
   latex: a^\mathrm{cirrus, ACT-south}
