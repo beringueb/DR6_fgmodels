@@ -10,7 +10,7 @@
 #SBATCH --error=./outputs/err-%J
 
 ### TIME ALLOCATION
-#SBATCH --time=20:00:00
+#SBATCH --time=50:00:00
 
 ### PARALLELIZATION
 #SBATCH --ntasks-per-node=10

@@ -1,7 +1,7 @@
 #!/bin/bash --login
 
 ### JOB NAME
-#SBATCH --job-name=bb_plik_highL
+#SBATCH --job-name=bb_highL
 
 ### OUTPUT FILE
 #SBATCH --output=./outputs/log-%J
@@ -10,7 +10,7 @@
 #SBATCH --error=./outputs/err-%J
 
 ### TIME ALLOCATION
-#SBATCH --time=50:00:00
+#SBATCH --time=20:00:00
 
 ### PARALLELIZATION
 #SBATCH --ntasks-per-node=10
@@ -39,5 +39,5 @@ source activate
 conda activate mflike-highL
 
 ### RUN COBAYA
-python3 -m cobaya run -r run_plik_highL_cp.yaml
+python3 -m cobaya run -r run_highL_cp.yaml
 

@@ -1,15 +1,17 @@
 # Foregrounds
 a_gtt_as:
   prior:
-    min: 0.0
-    max: 200.0
+    dist: norm
+      loc: 0.4
+      scale: 0.2
   ref: 0.4
   proposal: 0.01
   latex: a^\mathrm{cirrus, ACT-south}
 a_gtt_ae:
   prior:
-    min: 0.0
-    max: 200.0
+    dist: norm
+      loc: 0.8
+      scale: 0.2
   ref: 0.80
   proposal: 0.01
   latex: a^\mathrm{cirrus, ACT-equa}
