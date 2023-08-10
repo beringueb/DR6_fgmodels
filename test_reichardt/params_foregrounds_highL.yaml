@@ -4,39 +4,33 @@ a_CIB_2H:
     min: 0.0
     max: 200.0
   proposal: 0.7
-  ref: 1.82
   latex: a_\mathrm{CIBc-2halo}
 a_CIBp:
   prior:
     min: 0.0
     max: 200.0
   proposal: 0.7
-  ref: 7.24
   latex: a_\mathrm{CIB-poisson}
 beta_r:
   prior:
     min: -10.0
     max: 10.0
-  ref: -0.76
   latex: \beta_\mathrm{radio-poisson}
 beta_c:
   prior:
     min: -10.0
     max: 10.0
-  ref: 2.23
   latex: \beta_\mathrm{CIB-clustered}
 beta_p:
   prior:
     min: -10.0
     max: 10.0
-  ref: 1.48
   latex: \beta_\mathrm{CIB-poisson}
 T_dc: 25.0
 a_r: 
   prior:
     min: 0.0
     max: 500.0
-  ref: 1.01
   latex: a_\mathrm{radio-poisson}
   
     
