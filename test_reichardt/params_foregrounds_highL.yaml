@@ -4,14 +4,14 @@ a_CIB_2H:
     min: 0.0
     max: 200.0
   proposal: 0.7
-  ref: 47.0
+  ref: 1.82
   latex: a_\mathrm{CIBc-2halo}
 a_CIBp:
   prior:
     min: 0.0
     max: 200.0
   proposal: 0.7
-  ref: 47.0
+  ref: 7.24
   latex: a_\mathrm{CIB-poisson}
 beta_r:
   prior:
