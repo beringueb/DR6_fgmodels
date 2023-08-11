@@ -46,7 +46,14 @@ beta_p:
     loc: 1.48
     scale: 0.13
   latex: \beta_\mathrm{CIB-poisson}
-T_dc: 25.0
+T_dc: 
+  prior:
+    min: 10
+    max: 50
+  ref:
+    dist: norm
+    loc: 25
+    scale: 3
 a_r: 
   prior:
     min: 0.0
