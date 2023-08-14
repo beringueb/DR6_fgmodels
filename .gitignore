@@ -4,6 +4,10 @@ highL_plik/outputs/
 highL_plik_commonSZ/outputs/
 highL_plik_commonSZCIB/outputs/
 highL_plik_commonSZCIB_fixedTc/outputs/
+test_reichardt/outputs/
+test_reichardt_fixed/outputs/
+test_reichard_fixed_varyTd/outputs/ 
+test_reichardt_fixed_varyTd/outputs/
 
 #plik and highL data
 
