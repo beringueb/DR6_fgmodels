@@ -14,7 +14,7 @@
 
 ### PARALLELIZATION
 #SBATCH --ntasks-per-node=10
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 
 ### MEMORY USAGE
 ###SBATCH --mem-per-cpu=4000
