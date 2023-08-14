@@ -76,5 +76,6 @@ sigma_p_decor:
     min: 0.0
     max: 10.0
   ref: 0.1
+  proposal: 0.05
   latex: \sigma_p^\mathrm{decor}
   
