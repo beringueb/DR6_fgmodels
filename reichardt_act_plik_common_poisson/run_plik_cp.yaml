@@ -1,0 +1,13 @@
+debug: False
+force: False
+
+output: ./outputs/chains/plik_prior
+
+sampler:
+  mcmc:
+
+
+theory: !defaults [ theory_cosmopower ]
+likelihood: !defaults [likelihood_plikmflike ]
+params: !defaults [ params_cosmology ]
+prior: !defaults [ priors_foregrounds, priors_cosmology ]
