@@ -71,4 +71,10 @@ a_gtt_spt_220:
     loc: 2.19
     scale: 0.7
 T_dc: 25
-sigma_p_decor: 0.1
+sigma_p_decor:
+  prior:
+    min: 0.0
+    max: 2.0
+  ref: 0.1
+  latex: \sigma_p^\mathrm{decor}
+  
