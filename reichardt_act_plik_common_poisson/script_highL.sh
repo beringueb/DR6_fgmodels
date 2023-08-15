@@ -13,8 +13,7 @@
 #SBATCH --time=20:00:00
 
 ### PARALLELIZATION
-#SBATCH --ntasks-per-node=4
-#SBATCH --cpus-per-task=10
+#SBATCH --ntasks-per-node=10
 #SBATCH --nodes=1
 
 ### MEMORY USAGE
@@ -38,8 +37,7 @@ module load python/3.9.2
 module load anaconda
 source activate 
 conda activate mflike-highL
-module load mpi
 
 ### RUN COBAYA
-mpirun -n 4 python3 -m cobaya run -r run_highL_cp.yaml
+python3 -m cobaya run -r run_highL_cp.yaml
 
