@@ -1,11 +1,10 @@
 debug: False
 force: False
-resume: True 
 
-output: ./outputs/chains/reichardt_beamerr_prior_cov
+output: ./outputs/chains/reichardt_beamerr_prior
 
 sampler:
-  mcmc:
+  minimize:
 
 
 theory: !defaults [ theory_cosmopower ]
