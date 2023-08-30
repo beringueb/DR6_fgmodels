@@ -30,15 +30,25 @@ a_gtt_spt_220:
     dist: norm
     loc: 2.19
     scale: 0.7
-a_r_a:
+aps_148:
   prior:
-    dist: norm
-    loc: 2.9
-    scale: 0.4
-  ref: 2.9
-  proposal: 0.01
-  latex: a^\mathrm{radio, ACT}
-a_r_s:
+    min: 0.0
+    max: 400.
+  ref: 12.0
+  latex: a^\mathrm{poisson, ACT TT}_{148}
+aps_218:
+  prior:
+    min: 0.0
+    max: 400.
+  ref: 75.0
+  latex: a^\mathrm{poisson, ACT TT}_{218}
+rpsa:
+  prior:
+    min: 0.0
+    max: 1.0
+  ref: 0.95
+  latex: r^{poisson, ACT TT}_{148\times 218}
+a_r:
   prior:
     min: 0.0
     max: 40.0
@@ -54,7 +64,24 @@ a_CIBp:
   ref: 47
   proposal: 0.1
   latex: a^\mathrm{poisson, dusty}
-
+beta_r:
+  prior:
+    min: -10.0
+    max: 1.0
+  ref:
+    dist: norm
+    loc: -0.76
+    scale: 0.15
+  latex: \beta_\mathrm{radio-poisson}
+beta_p:
+  prior:
+    min: 0.0
+    max: 6.0
+  ref:
+    dist: norm
+    loc: 1.48
+    scale: 0.13
+  latex: \beta_\mathrm{CIB-poisson}
 
 
 

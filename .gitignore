@@ -11,7 +11,7 @@ test_reichardt_fixed_varyTd/outputs/
 test_reichardt_fixed_decor/outputs/ 
 test_reichardt_fixed_calib/outputs/
 reichardt_act_plik_common_poisson/outputs/
-
+reichardt_act_plik_common_cibsz/outputs/ 
 
 #plik and highL data
 
