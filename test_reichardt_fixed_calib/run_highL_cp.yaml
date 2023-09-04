@@ -2,8 +2,7 @@ debug: False
 force: False
 resume: True 
 
-output: ./outputs/chains/reichardt_cirrus_prior
-
+output: ./outputs/chains/reichardt_cal
 sampler:
   mcmc:
 
