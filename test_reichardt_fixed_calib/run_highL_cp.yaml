@@ -2,7 +2,7 @@ debug: False
 force: False
 resume: True 
 
-output: ./outputs/chains/reichardt_cal
+output: ./outputs/chains/reichardt_cal_vary
 sampler:
   mcmc:
 
