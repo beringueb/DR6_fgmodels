@@ -1,0 +1,25 @@
+INFO: To setup environment run:
+      eval "$(/apps/languages/anaconda/2021.11/bin/conda shell.bash hook)"
+  or just:
+      source activate
+2023-08-30 15:58:45.680438: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-30 15:58:45.683039: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-30 15:58:45.732939: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-30 15:58:45.733383: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-30 15:58:47.980518: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-08-30 15:58:54.708356: E tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:266] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+/nfshome/store01/groups/scw1361/bberingue/0223_mflike-highL/LAT_MFLike/mflike/theoryforge_MFLike.py:209: RuntimeWarning: invalid value encountered in sqrt
+  np.sqrt(fg_params["a_gtt_spt_95"] * fg_params["a_gtt_spt_150"]),
+/nfshome/store01/groups/scw1361/bberingue/0223_mflike-highL/LAT_MFLike/mflike/theoryforge_MFLike.py:210: RuntimeWarning: invalid value encountered in sqrt
+  np.sqrt(fg_params["a_gtt_spt_95"] * fg_params["a_gtt_spt_220"])],
+/nfshome/store01/groups/scw1361/bberingue/0223_mflike-highL/LAT_MFLike/mflike/theoryforge_MFLike.py:211: RuntimeWarning: invalid value encountered in sqrt
+  [np.sqrt(fg_params["a_gtt_spt_95"] * fg_params["a_gtt_spt_150"]),
+/nfshome/store01/groups/scw1361/bberingue/0223_mflike-highL/LAT_MFLike/mflike/theoryforge_MFLike.py:214: RuntimeWarning: invalid value encountered in sqrt
+  [np.sqrt(fg_params["a_gtt_spt_95"] * fg_params["a_gtt_spt_220"]),
+/home/c.spxbb1/.local/lib/python3.9/site-packages/numpy/linalg/linalg.py:2094: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/nfshome/store01/groups/scw1361/bberingue/0223_mflike-highL/LAT_MFLike/mflike/theoryforge_MFLike.py:213: RuntimeWarning: invalid value encountered in sqrt
+  np.sqrt(fg_params["a_gtt_spt_220"] * fg_params["a_gtt_spt_150"])],
+/nfshome/store01/groups/scw1361/bberingue/0223_mflike-highL/LAT_MFLike/mflike/theoryforge_MFLike.py:215: RuntimeWarning: invalid value encountered in sqrt
+  np.sqrt(fg_params["a_gtt_spt_220"] * fg_params["a_gtt_spt_150"]),
