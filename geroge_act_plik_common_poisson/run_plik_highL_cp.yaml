@@ -2,7 +2,7 @@ debug: False
 force: False
 resume : True
 
-output: ./outputs/chains/plik_reichardt_act
+output: ./outputs/chains/plik_george_act
 
 sampler:
   mcmc:
