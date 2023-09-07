@@ -4,6 +4,7 @@ cal_acts_148:
     dist: norm
     loc: 1.0
     scale: 0.02
+  proposal: 0.02
   latex: y^{148}_{ACT South}  
 cal_acts_220: 
   prior: 
@@ -13,13 +14,14 @@ cal_acts_220:
     dist: norm
     loc: 1.03
     scale: 0.01
+  proposal: 0.01
   latex: y^{220}_{ACT South}  
 cal_acte_148: 
   prior: 
     dist: norm
     loc: 1.0
     scale: 0.02
-  ref: 1.00
+  proposal: 0.02
   latex: y^{148}_{ACT Equa}  
 cal_acte_220: 
   prior: 
@@ -29,6 +31,7 @@ cal_acte_220:
     dist: norm
     loc: 0.99
     scale: 0.01
+  proposal: 0.01
   latex: y^{220}_{ACT Equa}  
 cal_sptg_90: 
   prior: 
@@ -38,6 +41,7 @@ cal_sptg_90:
     dist: norm
     loc: 1.01
     scale: 0.02
+  proposal: 0.02
   latex: y^{90}_{SPT}  
 cal_sptg_150:   
   prior: 
@@ -47,6 +51,7 @@ cal_sptg_150:
     dist: norm
     loc: 1.007
     scale: 0.008
+  proposal: 0.01
   latex: y^{150}_{SPT}  
 cal_sptg_220:
   prior: 
@@ -56,4 +61,5 @@ cal_sptg_220:
     dist: norm
     loc: 1.02
     scale: 0.02
+  proposal: 0.02
   latex: y^{220}_{SPT}  

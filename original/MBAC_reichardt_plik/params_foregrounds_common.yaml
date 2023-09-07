@@ -5,28 +5,36 @@ a_tSZ:
     max: 10.0
   ref:
     dist: norm
-    loc: 4.0
-    scale: 0.9
+    loc: 3.42
+    scale: 0.54
+  proposal: 0.5
   latex: a_\mathrm{tSZ}
 a_kSZ:
   prior:
     min: 0.0
     max: 10.0
-  ref: 2.10
-  proposal: 0.1
+  ref: 
+    dist: norm
+    loc: 3.0
+    scale: 1.0
+  proposal: 0.5
   latex: a_\mathrm{kSZ}
 a_CIB:
   prior:
     min: 0.0
     max: 200.0
-  proposal: 0.7
-  ref: 47.0
+  ref: 
+    dist: norm
+    loc: 32.4
+    scale: 11.2
+  proposal: 5.0
   latex: a_\mathrm{CIB}
 xi:
   prior:
     min: 0.0
-    max: 1.
-  proposal: 0.05
+    max: 1.0
+  ref: 0.2
+  proposal: 0.02
   latex: \xi^\mathrm{tSZ \ times CIB}
 
 
