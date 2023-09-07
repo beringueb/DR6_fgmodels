@@ -58,7 +58,7 @@ gal545_A_217:
     dist: norm
     loc: 91.9
     scale: 20.0
-  porposal: 2.0
+  proposal: 2.0
   latex: a^\mathrm{dust, Planck TT}_{217}
 gal545_A_143_217:
   prior:
