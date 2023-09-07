@@ -1,0 +1,26 @@
+mflike.PlikMFLike:
+  data_folder: ../data/plik/
+  stop_at_error: true
+
+  weightfile: bweight.dat
+  minfile: blmin.dat
+  maxfile: blmax.dat
+  covfile: covmat.dat
+  specfile: plikdata.dat
+  leakfile: leakage.dat
+  corrfile: ee_cnoise.dat
+  subpixfile: subpix.dat
+  
+  lmin: 30
+  lmax_theory: 3000
+  
+  foregrounds:
+    fg_model: ../../fg_models/fg_planck_plik.pkl
+        
+  defaults:
+    polarizations: [TT]
+    scales:
+      TT: [2, 2538]
+  
+  params: !defaults [ params_foregrounds_common, params_foregrounds_plik, params_systematics_plik ]
+

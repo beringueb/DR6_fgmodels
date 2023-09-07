@@ -1,0 +1,43 @@
+mflike.MFLike:
+  data_folder: ../../data
+
+  input_file: ACT_equa_south_SPT_george_sacc.fits
+
+  stop_at_error: True
+  lmax_theory: 6000
+
+  foregrounds:
+    fg_model: ../../fg_models/fg_highL_reichardt.pkl
+
+  defaults:
+    polarizations: [TT]
+    scales:
+      TT: [2, 13000]
+    symmetrize: false
+
+  data:
+    experiments:
+        - acts_148
+        - acts_220
+        - acte_148
+        - acte_220
+        - sptg_90
+        - sptg_150
+        - sptg_220
+
+    spectra:
+        - experiments: [ acts_148, acts_148 ]
+        - experiments: [ acts_148, acts_220 ]
+        - experiments: [ acts_220, acts_220 ]
+        - experiments: [ acte_148, acte_148 ]
+        - experiments: [ acte_148, acte_220 ]
+        - experiments: [ acte_220, acte_220 ]
+        - experiments: [ sptg_90, sptg_90 ]
+        - experiments: [ sptg_90, sptg_150 ]
+        - experiments: [ sptg_90, sptg_220 ]
+        - experiments: [ sptg_150, sptg_150 ]
+        - experiments: [ sptg_150, sptg_220 ]
+        - experiments: [ sptg_220, sptg_220 ]
+
+  params: !defaults [ params_foregrounds_common, params_foregrounds_highL, params_systematics_highL ]
+  

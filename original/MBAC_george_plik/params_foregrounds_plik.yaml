@@ -1,0 +1,49 @@
+# Foregrounds
+ps_A_100_100:
+  prior:
+    min: 0.0
+    max: 400.0
+  ref: 266.8792
+  latex: a^\mathrm{poisson, Planck TT}_{100}
+ps_A_143_143:
+  prior:
+    min: 0.0
+    max: 400.0
+  ref: 43.95643
+  latex: a^\mathrm{poisson, Planck TT}_{143}
+ps_A_217_217:
+  prior:
+    min: 0.0
+    max: 400.0
+  ref: 106.2541
+  latex: a^\mathrm{poisson, Planck TT}_{217}
+ps_A_143_217:
+  prior:
+    min: 0.0
+    max: 400.0
+  ref: 41.85458
+  latex: a^\mathrm{poisson, Planck TT}_{143 \times 217}
+gal545_A_100:
+  prior:
+    dist: norm
+    loc: 8.6
+    scale: 2.0
+  latex: a^\mathrm{dust, Planck TT}_{100}
+gal545_A_143:
+  prior:
+    dist: norm
+    loc: 10.6
+    scale: 2.0
+  latex: a^\mathrm{dust, Planck TT}_{143}
+gal545_A_217:
+  prior:
+    dist: norm
+    loc: 91.9
+    scale: 20.0
+  latex: a^\mathrm{dust, Planck TT}_{217}
+gal545_A_143_217:
+  prior:
+    dist: norm
+    loc: 23.5
+    scale: 8.5
+  latex: a^\mathrm{dust, Planck TT}_{143 \times 217}

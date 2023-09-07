@@ -1,0 +1,33 @@
+# Foregrounds
+a_tSZ:
+  prior:
+    min: 0.0
+    max: 10.0
+  ref:
+    dist: norm
+    loc: 4.0
+    scale: 0.9
+  latex: a_\mathrm{tSZ}
+a_kSZ:
+  prior:
+    min: 0.0
+    max: 10.0
+  ref: 2.10
+  proposal: 0.1
+  latex: a_\mathrm{kSZ}
+a_CIB:
+  prior:
+    min: 0.0
+    max: 200.0
+  proposal: 0.7
+  ref: 47.0
+  latex: a_\mathrm{CIB}
+xi:
+  prior:
+    min: 0.0
+    max: 1.
+  proposal: 0.05
+  latex: \xi^\mathrm{tSZ \ times CIB}
+
+
+
