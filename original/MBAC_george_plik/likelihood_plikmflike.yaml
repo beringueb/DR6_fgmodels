@@ -1,5 +1,5 @@
 mflike.PlikMFLike:
-  data_folder: ../data/plik/
+  data_folder: ../../data/plik/
   stop_at_error: true
 
   weightfile: bweight.dat
