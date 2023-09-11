@@ -1,7 +1,7 @@
 debug: False
 force: False
 
-output: ./outputs/chains/reichardt_beamerr_prior_cov
+output: ./outputs/chains/reichardt_tszxcib
 
 sampler:
   minimize:
@@ -14,4 +14,4 @@ likelihood: !defaults [likelihood_mflike_highL]
 #     noise: 1e-5
 # params: !defaults [ params_cosmology_fixed, params_systematics_highL ]
 params: !defaults [ params_cosmology_fixed ]
-prior: !defaults [ priors_cosmology, priors_systematics ]
+prior: !defaults [ priors_cosmology, priors_systematics, priors_foregrounds ]

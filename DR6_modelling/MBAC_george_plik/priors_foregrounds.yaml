@@ -1,0 +1,5 @@
+# External priors. I.e. priors inferred from different observations instead of physical limits.
+# The phyiscal priors impose physical limits (i.e. tau > 0.0), whereas the external priors
+#    impose extra information from external analyses (i.e. tau constraints from planck lowE measurements).
+# CIBc_prior: "lambda a_c: stats.norm.logpdf(a_c, loc = 4.9, scale = 0.9)"
+SZ: "lambda a_kSZ, a_tSZ: stats.norm.logpdf(a_kSZ+1.6*a_tSZ, loc=9.5, scale=3.0)"

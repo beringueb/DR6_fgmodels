@@ -7,6 +7,7 @@ a_CIB_2H:
     dist: norm
     loc: 1.82
     scale: 0.31
+  proposal: 0.01
   latex: a_\mathrm{CIBc-2halo}
 a_CIBp:
   prior:
@@ -16,6 +17,7 @@ a_CIBp:
     dist: norm
     loc: 7.24
     scale: 0.63
+  proposal: 0.1
   latex: a_\mathrm{CIB-poisson}
 beta_r:
   prior:
@@ -25,6 +27,7 @@ beta_r:
     dist: norm
     loc: -0.76
     scale: 0.15
+  proposal: 0.01
   latex: \beta_\mathrm{radio-poisson}
 beta_c:
   prior:
@@ -34,6 +37,7 @@ beta_c:
     dist: norm
     loc: 2.23
     scale: 0.18
+  proposal: 0.01
   latex: \beta_\mathrm{CIB-clustered}
 beta_p:
   prior:
@@ -43,6 +47,7 @@ beta_p:
     dist: norm
     loc: 1.48
     scale: 0.13
+  proposal: 0.01
   latex: \beta_\mathrm{CIB-poisson}
 a_r: 
   prior:
@@ -52,6 +57,7 @@ a_r:
     dist: norm
     loc: 1.01
     scale: 0.17
+  proposal: 0.01  
   latex: a_\mathrm{radio-poisson}
 a_gtt_spt:
   prior:
@@ -61,5 +67,16 @@ a_gtt_spt:
     dist: norm
     loc: 2.19
     scale: 0.7
+  proposal: 0.1
   latex: a_\mathrm{cirrus-SPT}^220
 T_dc: 25
+T_dp:
+  prior: 
+    min: 10.
+    max: 50.
+  ref: 
+    dist: norm
+    loc: 25.
+    scale: 1.
+  proposal: 0.1
+  latex : T_\mathrm{dust}^\mathrm{poisson}

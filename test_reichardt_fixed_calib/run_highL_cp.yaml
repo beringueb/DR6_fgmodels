@@ -2,7 +2,7 @@ debug: False
 force: False
 resume: True 
 
-output: ./outputs/chains/reichardt_cal_vary
+output: ./outputs/chains/reichardt_tszxcib_gal_sqr
 sampler:
   mcmc:
 
@@ -13,5 +13,5 @@ likelihood: !defaults [likelihood_mflike_highL]
 #   one:
 #     noise: 1e-5
 # params: !defaults [ params_cosmology_fixed, params_systematics_highL, params_foregrounds_common, params_foregrounds_highL ]
-params: !defaults [ params_cosmology]
+params: !defaults [ params_cosmology_fixed]
 prior: !defaults [ priors_cosmology, priors_systematics, priors_foregrounds ]
