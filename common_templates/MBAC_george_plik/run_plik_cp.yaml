@@ -2,7 +2,7 @@ debug: False
 force: False
 resume: True
 
-output: ../outputs/chains/plik_fixedcosmo
+output: ../outputs/chains_2/plik_fixedcosmo
 
 sampler:
   mcmc:

@@ -1,8 +1,8 @@
 debug: False
 force: False
-resume : True
+resume: True
 
-output: ../outputs/chains/MBAC_george_plik_fixedcosmo
+output: ../outputs/chains_2/MBAC_george_plik_fixedcosmo
 
 sampler:
   mcmc:

@@ -2,7 +2,7 @@ debug: False
 force: False
 resume : True
 
-output: ../outputs/chains/MBAC_george_plik_varycosmo
+output: ../outputs/chains_2/MBAC_george_plik_fixedcosmo
 
 sampler:
   mcmc:
@@ -10,5 +10,5 @@ sampler:
 
 theory: !defaults [ theory_cosmopower ]
 likelihood: !defaults [likelihood_mflike_highL, likelihood_plikmflike ]
-params: !defaults [ params_cosmology ]
+params: !defaults [ params_cosmology_fixed ]
 prior: !defaults [ priors_cosmology ]

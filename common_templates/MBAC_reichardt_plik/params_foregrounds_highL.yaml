@@ -64,7 +64,7 @@ beta_p:
     scale: 0.13
   proposal: 0.01
   latex: \beta_\mathrm{CIB-poisson}
-a_r: 
+a_r_s: 
   prior:
     min: 0.0
     max: 40.0
@@ -84,16 +84,7 @@ a_gtt_spt:
     scale: 0.7
   proposal: 0.1
   latex: a_\mathrm{cirrus-SPT}^{220}
-T_dp:
-  prior: 
-    min: 1.
-    max: 50.
-  ref: 
-    dist: norm
-    loc: 25.
-    scale: 1.
-  proposal: 0.1
-  latex : T_\mathrm{dust}^\mathrm{poisson}
+T_dp: 25.
 
     
 
