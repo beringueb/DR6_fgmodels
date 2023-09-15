@@ -2,7 +2,7 @@ debug: False
 force: False
 resume: True
 
-output: ../outputs_2/chains/MBAC_reichardt_plik_fixedcosmo
+output: ../outputs/chains_2/MBAC_reichardt_plik_fixedcosmo
 
 sampler:
   mcmc:
