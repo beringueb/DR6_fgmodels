@@ -64,8 +64,16 @@ a_gtt_spt:
   proposal: 0.1
   latex: a_\mathrm{cirrus-SPT}^{220}
 T_dp: 9.7
-beta_r: -2.5
-
+beta_r: 
+  prior:
+    min: -10.0
+    max: 0.0
+  ref:
+    dist: norm
+    loc: -2.5
+    scale: 0.13
+  proposal: 0.01
+  latex: \beta_\mathrm{radio-poisson}
     
 
 
