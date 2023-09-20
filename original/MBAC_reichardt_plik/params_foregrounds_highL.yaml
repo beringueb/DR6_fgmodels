@@ -1,4 +1,44 @@
 # Foregrounds
+a_tSZ:
+  prior:
+    min: 0.0
+    max: 40.0
+  ref:
+    dist: norm
+    loc: 3.42
+    scale: 0.54
+  proposal: 0.05
+  latex: a_\mathrm{tSZ}
+a_kSZ:
+  prior:
+    min: 0.0
+    max: 40.0
+  ref:
+    dist: norm
+    loc: 3.0
+    scale: 1.0
+  proposal: 0.05
+  latex: a_\mathrm{kSZ}
+a_CIB:
+  value: "lambda a_CIB_1H, a_CIB_2H: a_CIB_1H + a_CIB_2H"
+  latex: a_\mathrm{CIB}
+xi:
+  prior:
+    min: 0.0
+    max: 1.0
+  ref: 0.04
+  proposal: 0.005
+  latex: \xi^\mathrm{tSZ \ times CIB}
+a_CIB_1H:
+  prior:
+    min: 0.0
+    max: 200.0
+  ref:
+    dist: norm
+    loc: 32.4
+    scale: 11.2
+  proposal: 0.5
+  latex: a_\mathrm{CIBc-1halo}
 a_CIB_2H:
   prior:
     min: 0.0
@@ -7,7 +47,7 @@ a_CIB_2H:
     dist: norm
     loc: 27.5
     scale: 4.6
-  proposal: 2.
+  proposal: 0.1
   latex: a_\mathrm{CIBc-2halo}
 a_CIBp:
   prior:
@@ -17,7 +57,7 @@ a_CIBp:
     dist: norm
     loc: 61.4
     scale: 9.0
-  proposal: 5.
+  proposal: 1.
   latex: a_\mathrm{CIB-poisson}
 beta_r:
   prior:
@@ -27,27 +67,27 @@ beta_r:
     dist: norm
     loc: -2.76
     scale: 0.15
-  proposal: 0.1
+  proposal: 0.01
   latex: \beta_\mathrm{radio-poisson}
 beta_c:
   prior:
     min: 0.0
-    max: 6.0
+    max: 10.0
   ref:
     dist: norm
     loc: 2.23
     scale: 0.18
-  proposal: 0.1
+  proposal: 0.01
   latex: \beta_\mathrm{CIB-clustered}
 beta_p:
   prior:
     min: 0.0
-    max: 6.0
+    max: 10.0
   ref:
     dist: norm
     loc: 1.48
     scale: 0.13 
-  proposal: 0.1
+  proposal: 0.01
   latex: \beta_\mathrm{CIB-poisson}
 a_r_s: 
   prior:
@@ -57,7 +97,7 @@ a_r_s:
     dist: norm
     loc: 1.01
     scale: 0.17
-  proposal: 0.1
+  proposal: 0.01
   latex: a_\mathrm{radio-poisson}
 a_gtt_spt:
   prior:
@@ -67,7 +107,7 @@ a_gtt_spt:
     dist: norm
     loc: 2.19
     scale: 0.7
-  proposal : 0.5
+  proposal : 0.05
   latex: a_\mathrm{cirrus-SPT}^220
 T_dc: 25.0
 T_dp: 25.0
@@ -76,33 +116,33 @@ a_gtt_as:
     dist: norm
     loc: 0.4
     scale: 0.2
-  proposal: 0.2
+  proposal: 0.05
   latex: a^\mathrm{cirrus, ACT-south}
 a_gtt_ae:
   prior:
     dist: norm
     loc: 0.8
     scale: 0.2
-  proposal: 0.2
+  proposal: 0.05
   latex: a^\mathrm{cirrus, ACT-equa}
 aps_148:
   prior:
     min: 0.0
     max: 400.
   ref: 12.0
-  proposal: 2.0
+  proposal: 0.1
   latex: a^\mathrm{poisson, ACT TT}_{148}
 aps_218:
   prior:
     min: 0.0
     max: 400.
   ref: 75.0
-  proposal: 5.0
+  proposal: 1.0
   latex: a^\mathrm{poisson, ACT TT}_{218}
 rpsa:
   prior:
     min: 0.0
     max: 1.0
   ref: 0.95
-  proposal: 0.1
+  proposal: 0.01
   latex: r^{poisson, ACT TT}_{148\times 218}

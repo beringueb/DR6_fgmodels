@@ -22,5 +22,5 @@ mflike.PlikMFLike:
     scales:
       TT: [2, 2538]
   
-  params: !defaults [ params_foregrounds_common, params_foregrounds_plik, params_systematics_plik ]
+  params: !defaults [ params_foregrounds_common, params_systematics_plik ]
 
