@@ -36,7 +36,6 @@ a_CIBp:
 beta_p:
   value: "lambda beta_c: beta_c"
   latex: \beta_\mathrm{CIB-poisson}
-  derived: True
 #   prior:
 #     min: 0.0
 #     max: 6.0
