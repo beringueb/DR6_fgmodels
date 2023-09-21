@@ -34,15 +34,18 @@ a_CIBp:
   proposal: 0.1
   latex: a_\mathrm{CIB-poisson}
 beta_p:
-  prior:
-    min: 0.0
-    max: 6.0
-  ref:
-    dist: norm
-    loc: 1.48
-    scale: 0.13
-  proposal: 0.01
+  value: "lambda beta_c: beta_c"
   latex: \beta_\mathrm{CIB-poisson}
+  derived: True
+#   prior:
+#     min: 0.0
+#     max: 6.0
+#   ref:
+#     dist: norm
+#     loc: 1.48
+#     scale: 0.13
+#   proposal: 0.01
+#   latex: \beta_\mathrm{CIB-poisson}
 a_r_s: 
   prior:
     min: 0.0
