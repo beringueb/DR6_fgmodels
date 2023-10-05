@@ -6,6 +6,10 @@ test_reichardt_fixed_calib/outputs/
 original/outputs/
 common_templates/outputs/
 DR6_modelling/outputs/
+DR6_modelling_alpha/outputs/
+DR6_modelling_amp/outputs/
+DR6_modelling_betap/outputs/
+DR6_modelling_amp_betap/outputs/
 
 #plik and highL data
 

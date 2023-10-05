@@ -18,21 +18,21 @@ mflike.MFLike:
 
   data:
     experiments:
-#         - acts_148
-#         - acts_220
-#         - acte_148
-#         - acte_220
+        - acts_148
+        - acts_220
+        - acte_148
+        - acte_220
         - sptr_90
         - sptr_150
         - sptr_220
 
     spectra:
-#         - experiments: [ acts_148, acts_148 ]
-#         - experiments: [ acts_148, acts_220 ]
-#         - experiments: [ acts_220, acts_220 ]
-#         - experiments: [ acte_148, acte_148 ]
-#         - experiments: [ acte_148, acte_220 ]
-#         - experiments: [ acte_220, acte_220 ]
+        - experiments: [ acts_148, acts_148 ]
+        - experiments: [ acts_148, acts_220 ]
+        - experiments: [ acts_220, acts_220 ]
+        - experiments: [ acte_148, acte_148 ]
+        - experiments: [ acte_148, acte_220 ]
+        - experiments: [ acte_220, acte_220 ]
         - experiments: [ sptr_90, sptr_90 ]
         - experiments: [ sptr_90, sptr_150 ]
         - experiments: [ sptr_90, sptr_220 ]

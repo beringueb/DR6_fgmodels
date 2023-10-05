@@ -1,0 +1,14 @@
+debug: False
+force: False
+resume: True
+
+output: ../outputs/chains_2/MBAC_reichardt_plik_betar_betacp_fixedcosmo
+
+sampler:
+  mcmc:
+
+
+theory: !defaults [ theory_cosmopower ]
+likelihood: !defaults [likelihood_mflike_highL, likelihood_plikmflike ]
+params: !defaults [ params_cosmology_fixed ]
+prior: !defaults [ priors_cosmology, priors_systematics, priors_foregrounds ]

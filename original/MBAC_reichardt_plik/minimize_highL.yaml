@@ -1,7 +1,7 @@
 debug: False
 force: False
 
-output: ../outputs/chains_2/reichardt_fixedcosmo
+output: ../outputs/chains_2/reichardt_150_fixedcosmo
 
 sampler:
   minimize:
