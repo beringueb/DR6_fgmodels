@@ -2,11 +2,10 @@ debug: False
 force: False
 resume: True 
 
-output: ../outputs/chains_2/MBAC_reichardt_betar_alphaCIB_fixed_fixedcosmo
+output: ../outputs/chains_2/MBAC_reichardt_prior_radio_fixedcosmo
 
 sampler:
   mcmc:
-
 
 theory: !defaults [ theory_cosmopower ]
 likelihood: !defaults [likelihood_mflike_highL]
