@@ -10,6 +10,10 @@ DR6_modelling_alpha/outputs/
 DR6_modelling_amp/outputs/
 DR6_modelling_betap/outputs/
 DR6_modelling_amp_betap/outputs/
+DR6_modelling_base/outputs/
+DR6_modelling_betar/outputs/
+DR6_modelling_betac-betap/outputs/
+DR6_modelling_betac-betap-betar/outputs/
 
 #plik and highL data
 
