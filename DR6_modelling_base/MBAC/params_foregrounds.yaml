@@ -46,16 +46,6 @@ a_CIBp:
     scale: 0.63
   proposal: 0.1
   latex: a_\mathrm{CIB-poisson} 
-a_r_s: 
-  prior:
-    min: 0.0
-    max: 40.0
-  ref:
-    dist: norm
-    loc: 1.01
-    scale: 0.17
-  proposal: 0.01  
-  latex: a_\mathrm{radio-poisson, SPT}
 a_r_a: 
   prior:
     min: 0.0
@@ -80,16 +70,6 @@ a_gtt_ae:
     scale: 0.2
   proposal: 0.05
   latex: a^\mathrm{cirrus, ACT-equa}
-a_gtt_spt:
-  prior:
-    min: 0
-    max: 40
-  ref: 
-    dist: norm
-    loc: 2.19
-    scale: 0.7
-  proposal: 0.1
-  latex: a_\mathrm{cirrus-SPT}^{220}
 T_dp: 9.7
 T_dc: 9.7
 beta_r: -2.5
@@ -106,7 +86,5 @@ beta_c:
     scale: 0.18
   proposal: 0.01
   latex: \beta_\mathrm{CIB-clustered}
-
-
 
 

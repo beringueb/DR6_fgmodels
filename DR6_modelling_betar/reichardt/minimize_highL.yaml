@@ -1,13 +1,12 @@
 debug: False
 force: False
 
-output: ../outputs/chains_2/MBAC_reichardt_betar_fixedcosmo
+output: ../outputs/chains/reichardt
 
 sampler:
   minimize:
 
-
 theory: !defaults [ theory_cosmopower ]
-likelihood: !defaults [likelihood_mflike_highL ]
+likelihood: !defaults [likelihood_mflike_highL]
 params: !defaults [ params_cosmology_fixed ]
 prior: !defaults [ priors_cosmology, priors_systematics, priors_foregrounds ]

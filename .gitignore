@@ -14,6 +14,8 @@ DR6_modelling_base/outputs/
 DR6_modelling_betar/outputs/
 DR6_modelling_betac-betap/outputs/
 DR6_modelling_betac-betap-betar/outputs/
+dunkley/outputs/
+poisson_reichardt/outputs/
 
 #plik and highL data
 
