@@ -33,21 +33,3 @@ cal_acte_220:
     scale: 0.01
   proposal: 0.005
   latex: y^{220}_{ACT Equa}  
-cal_sptr_90: 
-  prior: 
-    min: 0.7
-    max: 1.3
-  proposal: 0.005
-  latex: y^{90}_{SPT}  
-cal_sptr_150:   
-  prior: 
-    min: 0.7
-    max: 1.3
-  proposal: 0.005
-  latex: y^{150}_{SPT}  
-cal_sptr_220:
-  prior: 
-    min: 0.7
-    max: 1.3
-  proposal: 0.005
-  latex: y^{220}_{SPT}  

@@ -1,4 +1,4 @@
-# External priors. I.e. priors inferred from different observations instead of physical limits.
-# The phyiscal priors impose physical limits (i.e. tau > 0.0), whereas the external priors
-#    impose extra information from external analyses (i.e. tau constraints from planck lowE measurements).
-calibration_SPT: "lambda cal_sptr_90, cal_sptr_150, cal_sptr_220: stats.multivariate_normal.logpdf(np.log(1./np.array([cal_sptr_90,cal_sptr_150,cal_sptr_220])), mean=[0.,0.,0.], cov=np.array([[1.1105131e-05, 3.5551351e-06, 1.1602891e-06],[3.5551351e-06, 3.4153547e-06, 2.1348018e-06],[1.1602891e-06, 2.1348018e-06, 1.7536000e-05]]))"
+# # External priors. I.e. priors inferred from different observations instead of physical limits.
+# # The phyiscal priors impose physical limits (i.e. tau > 0.0), whereas the external priors
+# #    impose extra information from external analyses (i.e. tau constraints from planck lowE measurements).
+# calibration_SPT: "lambda cal_sptr_90, cal_sptr_150, cal_sptr_220: stats.multivariate_normal.logpdf(np.log(1./np.array([cal_sptr_90,cal_sptr_150,cal_sptr_220])), mean=[0.,0.,0.], cov=np.array([[1.1105131e-05, 3.5551351e-06, 1.1602891e-06],[3.5551351e-06, 3.4153547e-06, 2.1348018e-06],[1.1602891e-06, 2.1348018e-06, 1.7536000e-05]]))"
