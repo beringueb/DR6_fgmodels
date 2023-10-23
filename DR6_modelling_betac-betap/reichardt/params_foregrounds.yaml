@@ -31,8 +31,8 @@ a_CIB:
   latex: a_\mathrm{CIB}
 xi:
   prior:
-    min: -1.0
-    max: 1.0
+    min: 0.0
+    max: 0.2
   ref: 0.04
   proposal: 0.01
   latex: \xi^\mathrm{tSZ \ times CIB}
