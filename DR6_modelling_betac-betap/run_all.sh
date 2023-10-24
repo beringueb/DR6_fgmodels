@@ -1,0 +1,9 @@
+cd MBAC/
+sbatch script_a_dr6_base.sh
+cd ../MBAC_reichardt/
+sbatch script_ar_dr6_base.sh
+cd ../MBAC_reichardt_plik/
+sbatch script_arp_dr6_base.sh
+cd ../reichardt/
+sbatch script_r_dr6_base.sh
+cd ../
