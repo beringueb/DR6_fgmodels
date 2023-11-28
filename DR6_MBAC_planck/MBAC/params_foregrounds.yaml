@@ -1,0 +1,92 @@
+# Foregrounds
+a_tSZ:
+  prior:
+    min: 0.0
+    max: 40.0
+  ref:
+    dist: norm
+    loc: 3.42
+    scale: 0.54
+  proposal: 0.1
+  latex: a_\mathrm{tSZ}
+a_kSZ:
+  prior:
+    min: 0.0
+    max: 40.0
+  ref:
+    dist: norm
+    loc: 3.0
+    scale: 1.0
+  proposal: 0.1
+  latex: a_\mathrm{kSZ}
+a_CIB:
+  prior:
+    min: 0.0
+    max: 40.0
+  ref:
+    dist: norm
+    loc: 2.21
+    scale: 0.88
+  proposal: 0.05
+  latex: a_\mathrm{CIB}
+xi:
+  prior:
+    min: 0.0
+    max: 0.2
+  ref: 0.04
+  proposal: 0.01
+  latex: \xi^\mathrm{tSZ \ times CIB}
+a_CIBp:
+  prior:
+    min: 0.0
+    max: 40.0
+  ref:
+    dist: norm
+    loc: 7.24
+    scale: 0.63
+  proposal: 0.1
+  latex: a_\mathrm{CIB-poisson} 
+a_r_a: 
+  prior:
+    min: 0.0
+    max: 40.0
+  ref:
+    dist: norm
+    loc: 1.01
+    scale: 0.17
+  proposal: 0.01  
+  latex: a_\mathrm{radio-poisson, ACT}
+a_gtt_as:
+  prior:
+    dist: norm
+    loc: 0.4
+    scale: 0.2
+  proposal: 0.05
+  latex: a^\mathrm{cirrus, ACT-south}
+a_gtt_ae:
+  prior:
+    dist: norm
+    loc: 0.8
+    scale: 0.2
+  proposal: 0.05
+  latex: a^\mathrm{cirrus, ACT-equa}
+T_dp: 9.7
+T_dc: 9.7
+beta_r: 
+  value: -2.5
+  latex: \beta_\mathrm{radio-poisson}
+beta_p:
+  value: "lambda beta_c: beta_c"
+  latex: \beta_\mathrm{CIB-poisson}
+beta_c:
+  prior:
+    min: 0.0
+    max: 6.0
+  ref:
+    dist: norm
+    loc: 2.23
+    scale: 0.18
+  proposal: 0.01
+  latex: \beta_\mathrm{CIB-clustered}
+
+
