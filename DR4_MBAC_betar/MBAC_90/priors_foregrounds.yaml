@@ -1,0 +1,14 @@
+# External priors. I.e. priors inferred from different observations instead of physical limits.
+# The phyiscal priors impose physical limits (i.e. tau > 0.0), whereas the external priors
+#    impose extra information from external analyses (i.e. tau constraints from planck lowE measurements).
+# CIBc_prior: "lambda a_c: stats.norm.logpdf(a_c, loc = 4.9, scale = 0.9)"
+# SZ: "lambda a_kSZ, a_tSZ: stats.norm.logpdf(a_kSZ+1.6*a_tSZ, loc=9.5, scale=3.0)"
+# cirrus_spt_95: "lambda a_gtt_spt : stats.norm.logpdf(a_gtt_spt*0.01932, loc=0.16, scale=0.06) "
+# cirrus_spt_150: "lambda a_gtt_spt : stats.norm.logpdf(a_gtt_spt*0.1295, loc=0.21, scale=0.06) "
+# cirrus_spt_220: "lambda a_gtt_spt : stats.norm.logpdf(a_gtt_spt*0.9910, loc=2.19, scale=0.70) "
+# radio_act: "lambda a_r_a : stats.norm.logpdf(a_r_a, loc=3.1, scale=0.4)"
+# cib_act: "lambda a_CIB : stats.norm.logpdf(a_CIB, loc=4.9, scale=0.9)"
+cirrus_MBAC_equa: "lambda a_gtt_ae : stats.norm.logpdf(a_gtt_ae, loc=0.8, scale=0.2)"
+cirrus_MBAC_south: "lambda a_gtt_as : stats.norm.logpdf(a_gtt_as, loc=0.4, scale=0.2)"
+cirrus_DR4_deep: "lambda a_gtt_ad : stats.norm.logpdf(a_gtt_ad, loc=2.79, scale=0.45)"
+cirrus_DR4_wide: "lambda a_gtt_aw : stats.norm.logpdf(a_gtt_aw, loc=8.77, scale=0.30)"

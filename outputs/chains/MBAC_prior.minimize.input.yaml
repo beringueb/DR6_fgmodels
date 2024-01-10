@@ -1,0 +1,274 @@
+theory:
+  soliket.CosmoPower:
+    stop_at_error: true
+    network_path: ../../data/lcdm/TTTEEE/
+    network_settings:
+      tt:
+        type: NN
+        filename: TT_v1
+        log: true
+        has_ell_factor: true
+      te:
+        type: PCAplusNN
+        filename: TE_v1
+        log: false
+        has_ell_factor: true
+      ee:
+        type: NN
+        filename: EE_v1
+        log: true
+        has_ell_factor: true
+    renames:
+      ombh2: omega_b
+      omch2: omega_cdm
+      logA: ln10^{10}A_s
+      ns: n_s
+      tau: tau_reio
+  soliket.CosmoPowerDerived:
+    stop_at_error: true
+    network_path: ../../data/lcdm/derived-parameters/
+    network_settings:
+      type: NN
+      filename: DER_v1
+      log: true
+    derived_parameters:
+    - thetas100
+    - sigma8
+    - YHe
+    - zrei
+    - Neff
+    - taurend
+    - zrend
+    - rrend
+    - rarend
+    - taustar
+    - zstar
+    - rstar
+    - rastar
+    - zdrag
+    renames:
+      ombh2: omega_b
+      omch2: omega_cdm
+      logA: ln10^{10}A_s
+      ns: n_s
+      tau: tau_reio
+    params:
+      thetas100:
+        latex: 100 \theta_s
+        derived: true
+      sigma8:
+        latex: \sigma_8
+        derived: true
+      YHe:
+        latex: Y_\mathrm{He}
+        derived: true
+      zrei:
+        latex: z_\mathrm{reio}
+        derived: true
+      taurend:
+        latex: \tau_\mathrm{rec}
+        derived: true
+      zrend:
+        latex: z_\mathrm{rec}
+        derived: true
+      rrend:
+        latex: r_{s,\mathrm{rec}}
+        derived: true
+      rarend:
+        latex: r_{a,\mathrm{rec}}
+        derived: true
+      taustar:
+        latex: \tau_\star
+        derived: true
+      zstar:
+        latex: z_\star
+        derived: true
+      rstar:
+        latex: r_{s,\star}
+        derived: true
+      rastar:
+        latex: r_{a,\star}
+        derived: true
+      zdrag:
+        latex: z_d
+        derived: true
+likelihood:
+  mflike.MFLike:
+    data_folder: ../../data
+    input_file: ACT_equa_south_SPT_reichardt_sacc.fits
+    beam_err_file: spt_hiell_2020_beamerr.bin
+    stop_at_error: true
+    lmax_theory: 6000
+    foregrounds:
+      fg_model: ../../fg_models/fg_DR6_model.pkl
+    defaults:
+      polarizations:
+      - TT
+      scales:
+        TT:
+        - 2
+        - 13000
+      symmetrize: false
+    data:
+      experiments:
+      - acts_148
+      - acts_220
+      - acte_148
+      - acte_220
+      spectra:
+      - experiments:
+        - acts_148
+        - acts_148
+      - experiments:
+        - acts_148
+        - acts_220
+      - experiments:
+        - acts_220
+        - acts_220
+      - experiments:
+        - acte_148
+        - acte_148
+      - experiments:
+        - acte_148
+        - acte_220
+      - experiments:
+        - acte_220
+        - acte_220
+    params:
+      a_tSZ:
+        prior:
+          min: 0.0
+          max: 40.0
+        ref:
+          dist: norm
+          loc: 3.42
+          scale: 0.54
+        proposal: 0.1
+        latex: a_\mathrm{tSZ}
+      a_kSZ:
+        prior:
+          min: 0.0
+          max: 40.0
+        ref:
+          dist: norm
+          loc: 3.0
+          scale: 1.0
+        proposal: 0.1
+        latex: a_\mathrm{kSZ}
+      a_CIB:
+        prior:
+          min: 0.0
+          max: 40.0
+        ref:
+          dist: norm
+          loc: 2.21
+          scale: 0.88
+        proposal: 0.05
+        latex: a_\mathrm{CIB}
+      xi:
+        prior:
+          min: 0.0
+          max: 0.2
+        ref: 0.04
+        proposal: 0.01
+        latex: \xi^\mathrm{tSZ \ times CIB}
+      a_CIBp:
+        prior:
+          min: 0.0
+          max: 40.0
+        ref:
+          dist: norm
+          loc: 7.24
+          scale: 0.63
+        proposal: 0.1
+        latex: a_\mathrm{CIB-poisson}
+      a_r_a:
+        prior:
+          min: 0.0
+          max: 40.0
+        ref:
+          dist: norm
+          loc: 1.01
+          scale: 0.17
+        proposal: 0.01
+        latex: a_\mathrm{radio-poisson, ACT}
+      a_gtt_as:
+        prior:
+          dist: norm
+          loc: 0.4
+          scale: 0.2
+        proposal: 0.05
+        latex: a^\mathrm{cirrus, ACT-south}
+      a_gtt_ae:
+        prior:
+          dist: norm
+          loc: 0.8
+          scale: 0.2
+        proposal: 0.05
+        latex: a^\mathrm{cirrus, ACT-equa}
+      T_dp: 9.7
+      T_dc: 9.7
+      beta_r: -2.5
+      beta_p:
+        value: 'lambda beta_c: beta_c'
+        latex: \beta_\mathrm{CIB-poisson}
+      beta_c:
+        prior:
+          min: 0.0
+          max: 6.0
+        ref:
+          dist: norm
+          loc: 2.23
+          scale: 0.18
+        proposal: 0.01
+        latex: \beta_\mathrm{CIB-clustered}
+      cal_acts_148:
+        prior:
+          dist: norm
+          loc: 1.0
+          scale: 0.02
+        proposal: 0.005
+        latex: y^{148}_{ACT South}
+      cal_acts_220:
+        prior:
+          min: 0.7
+          max: 1.3
+        ref:
+          dist: norm
+          loc: 1.03
+          scale: 0.01
+        proposal: 0.005
+        latex: y^{220}_{ACT South}
+      cal_acte_148:
+        prior:
+          dist: norm
+          loc: 1.0
+          scale: 0.02
+        proposal: 0.005
+        latex: y^{148}_{ACT Equa}
+      cal_acte_220:
+        prior:
+          min: 0.7
+          max: 1.3
+        ref:
+          dist: norm
+          loc: 0.99
+          scale: 0.01
+        proposal: 0.005
+        latex: y^{220}_{ACT Equa}
+prior:
+  radio_act: 'lambda a_r_a : stats.norm.logpdf(a_r_a, loc=2.9, scale=0.4)'
+params:
+  H0: 67.32
+  logA: 3.0448
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+    latex: A_\mathrm{s}
+    derived: true
+  ns: 0.96605
+  ombh2: 0.022383
+  omch2: 0.12011
+  tau: 0.0543
+sampler:
+  minimize: null
+output: MBAC_prior

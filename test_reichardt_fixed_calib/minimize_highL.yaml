@@ -1,7 +1,7 @@
 debug: False
 force: False
 
-output: ./outputs/chains/reichardt_tszxcib_gal_sqr
+output: ./outputs/chains/reichardt_cibc
 
 sampler:
   minimize:

@@ -2,7 +2,7 @@ debug: False
 force: False
 resume: True 
 
-output: ../outputs/chains/MBAC_reichardt
+output: ../outputs/chains/MBAC_reichardt_cibp
 
 sampler:
   mcmc:

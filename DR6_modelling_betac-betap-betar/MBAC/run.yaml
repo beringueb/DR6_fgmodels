@@ -2,7 +2,7 @@ debug: False
 force: False
 resume: True 
 
-output: ../outputs/chains/MBAC_prior
+output: ../outputs/chains/MBAC_prior_Td25
 
 sampler:
   mcmc:

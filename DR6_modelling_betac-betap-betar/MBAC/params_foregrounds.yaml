@@ -70,8 +70,8 @@ a_gtt_ae:
     scale: 0.2
   proposal: 0.05
   latex: a^\mathrm{cirrus, ACT-equa}
-T_dp: 9.7
-T_dc: 9.7
+T_dp: 25.
+T_dc: 25.
 beta_r: 
   prior:
     min: -10.0

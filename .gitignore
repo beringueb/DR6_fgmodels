@@ -3,19 +3,18 @@
  
 test_reichardt_fixed_calib/outputs/
 
-original/outputs/
-common_templates/outputs/
 DR6_modelling/outputs/
-DR6_modelling_alpha/outputs/
-DR6_modelling_amp/outputs/
 DR6_modelling_betap/outputs/
-DR6_modelling_amp_betap/outputs/
+
 DR6_modelling_base/outputs/
 DR6_modelling_betar/outputs/
 DR6_modelling_betac-betap/outputs/
 DR6_modelling_betac-betap-betar/outputs/
-dunkley/outputs/
-poisson_reichardt/outputs/
+
+DR4_MBAC_base/outputs/
+DR4_MBAC_betar/outputs/
+DR4_MBAC_betac-betap/outputs/
+DR4_MBAC_betac-betap-betar/outputs/
 
 #plik and highL data
 

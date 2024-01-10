@@ -36,7 +36,7 @@ xi:
   ref: 0.04
   proposal: 0.01
   latex: \xi^\mathrm{tSZ \ times CIB}
-a_CIBp:
+a_CIBp_a:
   prior:
     min: 0.0
     max: 40.0
@@ -45,7 +45,17 @@ a_CIBp:
     loc: 7.24
     scale: 0.63
   proposal: 0.1
-  latex: a_\mathrm{CIB-poisson} 
+  latex: a_\mathrm{CIB-poisson-ACT} 
+a_CIBp_s:
+  prior:
+    min: 0.0
+    max: 40.0
+  ref:
+    dist: norm
+    loc: 7.24
+    scale: 0.63
+  proposal: 0.1
+  latex: a_\mathrm{CIB-poisson-SPT} 
 a_r_a: 
   prior:
     min: 0.0
@@ -90,8 +100,21 @@ a_gtt_spt:
     scale: 0.7
   proposal: 0.1
   latex: a_\mathrm{cirrus-SPT}^{220}
-T_dp: 9.7
-T_dc: 9.7
+T_dp: 25
+T_dc: 25
+# T_dp:
+#   value: "lambda T_dc: T_dc"
+#   latex: T_\mathrm{dust, poisson}
+# T_dc:
+#   prior: 
+#     min: 5
+#     max: 50
+#   ref:
+#     dist: norm
+#     loc: 10
+#     scale: 1
+#   proposal: 0.1
+#   latex: T_\mathrm{dust, clustered}
 beta_r: 
   prior:
     min: -10.0

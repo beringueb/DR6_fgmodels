@@ -8,7 +8,7 @@ mflike.MFLike:
   lmax_theory: 6000
 
   foregrounds:
-    fg_model: ../fg_models/fg_highL_reichardt_tszxcib.pkl
+    fg_model: ../fg_models/fg_highL_reichardt_tszxcib_150.pkl
 
   defaults:
     polarizations: [TT]
