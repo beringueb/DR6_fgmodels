@@ -1,11 +1,11 @@
 debug: False
 force: False
-resume: True
 
-output: ../outputs/chains/DR4_220_priorcibradio
+output: ../outputs/chains/DR4_priorcibradio
 
 sampler:
-  mcmc:
+  minimize:
+
 
 theory: !defaults [ theory_cosmopower ]
 likelihood: !defaults [likelihood_mflike_highL ]

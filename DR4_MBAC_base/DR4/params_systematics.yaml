@@ -1,0 +1,14 @@
+#systematics
+cal_dr4d_90: 
+  value: 1.0
+  latex: y^{90}_{ACT DR4-deep} 
+cal_dr4w_90: 
+  value: 1.0
+  latex: y^{90}_{ACT DR4-wide} 
+cal_dr4d_150: 
+  value: 1.0
+  latex: y^{150}_{ACT DR4-deep} 
+cal_dr4w_150: 
+  value: 1.0
+  latex: y^{150}_{ACT DR4-wide} 
+  

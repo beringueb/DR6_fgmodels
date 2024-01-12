@@ -2,7 +2,7 @@ debug: False
 force: False
 resume: True
 
-output: ../outputs/chains/DR4_220
+output: ../outputs/chains/DR4_220_priorcibradio
 
 sampler:
   mcmc:
