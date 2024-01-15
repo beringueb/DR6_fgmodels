@@ -1,0 +1,39 @@
+mflike.MFLike:
+  data_folder: ../../data
+
+  input_file: MBAC_DR4_full_cls.fits
+
+  stop_at_error: True
+  lmax_theory: 6000
+
+  foregrounds:
+    fg_model: ../../fg_models/fg_DR4_MBAC_150.pkl
+
+  defaults:
+    polarizations: [TT]
+    scales:
+      TT: [600, 12000]
+    symmetrize: false
+
+  data:
+    experiments:
+        - acts_220
+        - acte_220
+        - dr4d_90
+        - dr4d_150
+        - dr4w_90
+        - dr4w_150
+
+    spectra:
+        - experiments: [ dr4d_90, dr4d_90]
+        - experiments: [ dr4d_90, dr4d_150]
+        - experiments: [ dr4d_150, dr4d_150]
+        - experiments: [ dr4w_90, dr4w_90]
+        - experiments: [ dr4w_90, dr4w_150]
+        - experiments: [ dr4w_150, dr4w_150]
+        - experiments: [ acts_220, acts_220 ]
+        - experiments: [ acte_220, acte_220 ]
+
+
+  params: !defaults [ params_foregrounds_common, params_foregrounds_act, params_systematics_act ]
+  

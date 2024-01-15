@@ -1,7 +1,7 @@
 debug: False
 force: False
 
-output: ../outputs/chains/DR4_220_tsz143
+output: ../outputs/chains/DR4_220_priorcibradio
 
 sampler:
   minimize:
