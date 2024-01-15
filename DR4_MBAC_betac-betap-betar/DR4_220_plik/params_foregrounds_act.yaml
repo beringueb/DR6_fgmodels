@@ -91,6 +91,9 @@ beta_p:
     scale: 0.37
   proposal: 0.01
   latex: \beta_\mathrm{CIB-poisson}
+beta_g: 
+  value: 1.5
+  latex: \beta_\mathrm{dust}
     
 
 
