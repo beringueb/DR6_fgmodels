@@ -2,7 +2,7 @@ debug: False
 force: False
 resume: True
 
-output: ../outputs/chains/DR4_220_plik_prior
+output: ../outputs/chains/DR4_220_plik
 
 sampler:
   mcmc:
